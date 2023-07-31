@@ -1,0 +1,53 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(4, 55px);
+  grid-template-rows: repeat(4, 30px);
+  list-style: none;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: grey;
+  grid-template-areas: 
+  "icon title title title"
+  "icon description description description"
+  ". . . ."
+  "link link link arrow"
+}
+
+.icon, .title {
+  margin: 10px;
+}
+
+.icon {
+  font-size: 20px;
+  grid-area: icon;
+}
+
+.title {
+  font-weight: bold;
+  grid-area: title;
+}
+
+.description {
+  margin-top: 10px;
+  grid-area: description;
+}
+
+.link {
+  margin: 5px 10px;
+  grid-area: link;
+}
+
+.arrow {
+  text-align: right;
+  margin-top: 25px;
+  margin-right: 5px;
+  opacity: 50%;
+  rotate: -45deg;
+  grid-area: arrow;
+}
