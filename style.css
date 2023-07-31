@@ -15,7 +15,7 @@
   list-style: none;
   border-style: solid;
   border-radius: 5px;
-  border-color: grey;
+  border-color: rgb(128, 128, 128, .2);
   grid-template-areas: 
   "icon title title title"
   "icon description description description"
@@ -66,4 +66,18 @@ a {
   text-decoration: none;
   color: grey;
   font-weight: 500;
+}
+
+@media (max-width: 400px) {
+
+  .cards { 
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 30px);
+  }
+
 }
