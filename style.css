@@ -4,6 +4,10 @@
   grid-gap: 20px;
 }
 
+.card:hover {
+  background-color: rgb(128, 128, 128, .1);
+}
+
 .card {
   display: grid;
   grid-template-columns: repeat(4, 55px);
@@ -17,6 +21,12 @@
   "icon description description description"
   ". . . ."
   "link link link arrow"
+}
+
+.fa-message {
+  background-color: rgb(128, 128, 128, .5);
+  border-radius: 15px;
+  padding: 5px;
 }
 
 .icon, .title {
@@ -50,4 +60,10 @@
   opacity: 50%;
   rotate: -45deg;
   grid-area: arrow;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+  font-weight: 500;
 }
